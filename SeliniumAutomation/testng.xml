@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="lens kart">
+
+<listeners>
+<listener class-name = "com.qa.utility.Reporting"></listener>
+</listeners>
+ 
+   <test thread-count="5" name="Functional Testing" parallel = "classes" >
+  <parameter name = "Browser" value = "chrome"></parameter>
+  <parameter name = "Url" value ="https://www.amazon.in/"></parameter>
+  <classes>
+  <class name="com.qa.testscript.TC_Amazon"/></classes>
+  
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
